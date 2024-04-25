@@ -1,0 +1,165 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 75px;
+	box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo i {
+	font-size: 32px;
+}
+
+.links {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.links a {
+	color: #111;
+	text-decoration: none;
+	margin: 0 10px;
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+
+.search {
+	width: 800px;
+	height: 45px;
+	background: #e4e4e4;
+	border-radius: 80px;
+	padding: 0 20px;
+}
+
+.search i {
+	color: #555;
+}
+
+.search input {
+	border: none;
+	background: transparent;
+	width: 80%;
+	height: 100%;
+	outline: none;
+	padding: 0 10px;
+	font-size: 16px;
+	margin: 0 10px;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icons i {
+	font-size: 26px;
+	color: #333;
+	margin: 0 15px;
+	cursor: pointer;
+}
+
+.container {
+	max-width: 960px;
+}
+
+.card {
+	border-radius: 8px;
+}
+
+/* Custom CSS untuk input file */
+.custom-file-label::after {
+	content: "Pilih File";
+}
+
+.custom-file-input:focus~.custom-file-label::after {
+	border-color: #80bdff;
+	box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+/* Custom CSS untuk area preview gambar */
+#image-preview-container {
+	border: 2px dashed #ccc;
+	padding: 20px;
+	border-radius: 8px;
+	background-color: #f9f9f9;
+	min-height: 200px;
+	/* atur tinggi minimum */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#image-preview-container img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+	/* pastikan gambar selalu tertutup dalam kontainer */
+}
+
+/* Custom CSS untuk input file */
+.custom-file-label::after {
+	content: "Pilih File";
+}
+
+.custom-file-input {
+	display: none;
+	/* Sembunyikan tombol input file default */
+}
+
+.custom-file-button {
+	background-color: #007bff;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.custom-file-button:hover {
+	background-color: #0056b3;
+}
+
+.img {
+	width: 80px;
+}
+
+#image-preview-container {
+	position: relative;
+}
+
+#image-preview-container label {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 18px;
+	color: #333;
+}
+
+#image-preview-container img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+}
+
+.custom-btn {
+	background-color: #ff0000;
+	color: white;
+}
+
+.custom-btn:hover {
+	background-color: #8d0000;
+	color: white;
+}
